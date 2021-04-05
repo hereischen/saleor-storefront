@@ -16,6 +16,11 @@ module.exports = ({ sourceDir, distDir }) => ({
   entry: {
     app: `${sourceDir}/index.tsx`,
   },
+  devServer: {
+    allowedHosts: [
+      "shanhuoyanghuo.com",
+    ],
+  },
   module: {
     rules: [
       {
